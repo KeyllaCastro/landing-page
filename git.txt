@@ -1,0 +1,437 @@
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git config --global user.name "KeyllaCastro"
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=KeyllaCastro
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git config --global user.email "keylla.castro@etec.sp.gov.br"
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=KeyllaCastro
+user.email=keylla.castro@etec.sp.gov.br
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git clone https://github.com/KeyllaCastro/landing-page
+Cloning into 'landing-page'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ ls
+landing-page/
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ anding-page
+bash: anding-page: command not found
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ landing-page
+bash: landing-page: command not found
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ ls
+landing-page/
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ pwd
+/c/Users/KEYLLA_4773/Desktop/projetos
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ la
+bash: la: command not found
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ ls
+landing-page/
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos
+$ cd landing-page
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git add index.html
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "pagina inicial do site"
+[main af1492f] pagina inicial do site
+ 1 file changed, 16 insertions(+)
+ create mode 100644 index.html
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        versao2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git add versao2.js
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   versao2.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "Versão dois em js"
+[main 080d011] Versão dois em js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 versao2.js
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ ^C
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ ^C
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git log
+commit 080d01118f24b2fb96f7655f72ca5947777ae6e7 (HEAD -> main)
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 21:53:19 2024 -0300
+
+    Versão dois em js
+
+commit af1492feb84c026b7648735a76926f01f7f57210
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 21:47:06 2024 -0300
+
+    pagina inicial do site
+
+commit bd784597a3c70a98fe265d6950241efd8b848f2c (origin/main, origin/HEAD)
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 21:37:39 2024 -0300
+
+    Initial commit
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   versao2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git add .
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "alterando index"
+[main 4fc8b4d] alterando index
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git log
+commit 4fc8b4d980148786e0025cef713b0f254f5f4d8b (HEAD -> main)
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 22:02:23 2024 -0300
+
+    alterando index
+
+commit 080d01118f24b2fb96f7655f72ca5947777ae6e7
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 21:53:19 2024 -0300
+
+    Versão dois em js
+
+commit af1492feb84c026b7648735a76926f01f7f57210
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 21:47:06 2024 -0300
+
+    pagina inicial do site
+
+commit bd784597a3c70a98fe265d6950241efd8b848f2c (origin/main, origin/HEAD)
+Author: KeyllaCastro <keylla.castro@etec.sp.gov.br>
+Date:   Thu Nov 7 21:37:39 2024 -0300
+
+    Initial commit
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ ^C
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git checkout af1492feb84c026b7648735a76926f01f7f57210
+Note: switching to 'af1492feb84c026b7648735a76926f01f7f57210'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at af1492f pagina inicial do site
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page ((af1492f...))
+$ git checkout main
+Previous HEAD position was af1492f pagina inicial do site
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 1.09 KiB | 1.09 MiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/KeyllaCastro/landing-page
+   bd78459..4fc8b4d  main -> main
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ ^C
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git add oi.txt
+fatal: pathspec 'oi.txt' did not match any files
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "adicionando texto no arquivo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+To https://github.com/KeyllaCastro/landing-page
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/KeyllaCastro/landing-page'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 984 bytes | 109.00 KiB/s, done.
+From https://github.com/KeyllaCastro/landing-page
+   4fc8b4d..8a53db5  main       -> origin/main
+Updating 4fc8b4d..8a53db5
+Fast-forward
+ oi.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 oi.txt
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git add oi.txt
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "adicionando texto no arquivo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+Everything up-to-date
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+Everything up-to-date
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "adicionando texto no arquivo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+Everything up-to-date
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "adicionando texto no arquivo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   oi.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+Everything up-to-date
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git commit -m "adicionando texto no arquivo"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   oi.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ git push
+Everything up-to-date
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$ ^C
+
+KEYLLA_4773@LAB03-07 MINGW64 ~/Desktop/projetos/landing-page (main)
+$
